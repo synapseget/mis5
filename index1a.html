@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+ 
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+
+	<meta charset="utf-8"/>
+
+	<title> MIS iConnect | Dashboard </title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+	<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<!-- BEGIN PAGE LEVEL STYLES -->
+	<link href="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/admin/pages/css/profile.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+	<!-- END PAGE LEVEL STYLES -->
+
+	<!-- BEGIN THEME STYLES -->
+	<link href="assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+	<link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+	<link id="style_color" href="assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+	<!-- END THEME STYLES -->
+
+	<link rel="shortcut icon" href="favicon.ico"/>
+
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+
+<body class="page-header-fixed page-quick-sidebar-over-content page-full-width">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		
+		<div class="hor-menu hidden-sm hidden-xs">
+			<ul class="nav navbar-nav">
+			
+				<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
+				<li class="classic-menu-dropdown">
+				
+					<a data-toggle="dropdown" href="#" data-hover="megamenu-dropdown" data-close-others="true">
+						<img src="assets/admin/layout/img/sidebar_inline_toggler_icon_default.jpg" alt="logo" class="logo-default" /> <b>Condition Monitor</b>
+						<!-- <i class="fa fa-angle-down"></i>  -->
+					</a>
+					
+					<ul class="dropdown-menu pull-left" style="width:228px; z-index:1050; font-size:15px;">
+						<li>
+							<a href="#"> <i class="fa fa-bookmark-o"></i> <b>EHS</b> </a>
+						</li>
+						<li>
+							<a href="#"> <i class="icon-settings"></i> <b>Production</b>  </a>
+						</li>
+						<li>
+							<a href="#"> <i class="icon-settings"></i> <b>Lighting</b>  </a>
+						</li>
+						<li>
+							<a href="#"> <i class="icon-settings"></i> <b>Utilities</b>  </a>
+						</li>
+						 
+					</ul>
+				</li>
+				
+				<li class="classic-menu-dropdown">
+					<a href="#"> <i class="fa fa-ellipsis-v"></i> </a>
+				</li>
+				
+				<li class="classic-menu-dropdown active">
+					<a href="index1.html"> Home <span class="selected"></span> </a>
+				</li>
+				
+				<li class="classic-menu-dropdown">
+					<a data-toggle="dropdown" href="alerts-config.html" data-hover="megamenu-dropdown" data-close-others="true">
+					Alerts <i class="fa fa-angle-down"></i> 
+					</a>
+					<ul class="dropdown-menu pull-left">
+						<li>
+							<a href="alerts-config.html">
+							<i class="fa fa-bookmark-o"></i> Configuration </a>
+						</li>
+						<li>
+							<a href="alerts-message.html">
+							<i class="icon-settings"></i> Messages  </a>
+						</li>
+						 
+					</ul>
+				</li>				
+				
+				<li class="classic-menu-dropdown">
+					<a data-toggle="dropdown" href="alerts-config.html" data-hover="megamenu-dropdown" data-close-others="true">
+					 Configurations <i class="fa fa-angle-down"></i> <span class="selected"></span>
+					</a>
+					<ul class="dropdown-menu pull-left">
+						<li>
+							<a href="machine-config.html">
+							<i class="fa fa-bookmark-o"></i> Machine Configuration </a>
+						</li>
+						<li>
+							<a href="sensor-config.html">
+							<i class="icon-settings"></i> Sensors Configuration  </a>
+						</li> 
+					</ul>
+				</li>
+				
+				<li class="classic-menu-dropdown">
+					<a href="report-summary.html"> Reports </a>
+				</li>
+				
+				<li class="classic-menu-dropdown">
+					<a href="index1.html"> Admin </a>
+				</li>
+			 
+			</ul>
+		</div>
+		<!-- END HORIZANTAL MENU -->
+		
+		
+		<!-- BEGIN HEADER SEARCH BOX -->
+		<!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
+		<form class="search-form open" action="#" method="GET">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search..." name="query">
+				<span class="input-group-btn">
+					<a href="javascript:;" class="btn submit"> <i class="icon-magnifier"></i> </a>
+				</span>
+			</div>
+		</form>
+		<!-- END HEADER SEARCH BOX -->
+		
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<div class="top-menu">
+			<ul class="nav navbar-nav pull-right">
+				
+				<!-- BEGIN LOGO -->
+				<div class="page-logo">
+					<a href="#"> <img src="assets/admin/layout/img/logo-bg.png" alt="logo" class="logo-default" /> </a>
+				</div>
+				<!-- END LOGO -->
+				
+				<!-- BEGIN USER LOGIN DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown1 dropdown-user">
+					<a href="login.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<img alt="" class="img-circle" src="assets/admin/layout/img/avatar.png"/>
+						<span onclick="document.location.href='index.html';" class="username username-hide-on-mobile"> Logout </span>
+						<!-- <i class="fa fa-angle-down"></i> -->
+					</a>
+				 
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+				 
+			</ul>
+		</div>
+		<!-- END TOP NAVIGATION MENU -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+
+
+<div class="clearfix">
+</div>
+
+<!-- BEGIN CONTAINER -->
+<div class="page-container" id="dashboard">
+	
+	<!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+	 
+		<div class="page-sidebar navbar-collapse collapse">
+			 
+			<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200"> 
+				<li class="sidebar-toggler-wrapper">
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+					<div class="sidebar-toggler">
+					</div>
+					<!-- END SIDEBAR TOGGLER BUTTON -->
+				</li>
+				 
+				<li class="start ">
+					<a href="javascript:;">
+						<i class="icon-home"></i>
+						<span class="title">Home</span>
+					</a> 
+				</li>
+				
+				<li>
+					<a href="javascript:;">
+						<i class="icon-home"></i>
+						<span class="title">Reports</span>
+					</a> 
+				</li>
+				
+				<li>
+					<a href="javascript:;">
+						<i class="icon-home"></i>
+						<span class="title">Alerts</span>
+					</a> 
+				</li>
+				
+				<li class="last ">
+					<a href="javascript:;">
+						<i class="icon-home"></i>
+						<span class="title">Admin</span>
+					</a> 
+				</li>
+			  
+			</ul>
+			<!-- END SIDEBAR MENU -->
+		</div>
+	</div>
+	<!-- END SIDEBAR -->
+	 
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+		 
+		<!-- <h3 class="page-title"> Dashboard  </h3>	 -->	
+		
+	 		
+			<!-- BEGIN PAGE HEADER-->
+			<div class="page-bar">
+			
+				<div class="row" style="padding:2px;">
+						
+						<div class="col-lg-8"> 
+							<h4 style="font-size:16px; font-weight:bold; margin:0px 10px;"> 
+							<a href="index1.html" title="Mono-sensor Dashboard View"> <img alt="" src="assets/admin/layout/img/monosensor-btn.png" style="margin-top:2px;" /> </a>	 Dashboard </h4> 
+						</div>
+				 
+						<div class="col-lg-4 col-md-6 col-sm-10 col-xs-12">
+						 
+							<h4 class="block1 bold" style="float:left; margin-top:12px;"> FILTER &nbsp;&nbsp;  </h4>  
+						
+							<!-- <div class="round-grady" style="float:left; width:35%;">
+								<h4 class="block1" style="float:left; margin-top:8px;"> Sensors: &nbsp;&nbsp;  </h4>   				  
+											 
+								<div class="btn-group1" data-toggle="buttons" style="margin-top:6px;"> 
+									<label class="btn btn-xs btn-primary" id="showtemp">
+									<input type="checkbox" class="toggle"> Temperature </label>
+									
+									<label class="btn btn-xs btn-primary" id="vibration">
+									<input type="checkbox" class="toggle" id="testvib"> Vibration </label>
+								</div>	
+							</div> -->
+							
+								<div class="round-grady" style="float:left; width:60%;">			
+									<h4 class="block1" style="float:left; margin-top:8px;"> Status: &nbsp;&nbsp;  </h4> 
+								
+									<!-- 
+										<button type="button" class="btn btn-sm green activegreen"> Healthy </button>
+										<button type="button" class="btn btn-sm red abnormalred"> Abnormal </button>						
+										<button type="button" class="btn btn-sm grey inactivegrey"> Inactive </button>
+									 -->
+									
+									<div class="btn-group1 btn-group-circle" data-toggle="buttons" style="margin-top:6px;">
+										<label class="btn btn-xs green" id="healthyitems">
+										<input type="checkbox" class="toggle"> Healthy </label>
+										
+										<label class="btn btn-xs red" id="abnormalitems" >
+										<input type="checkbox" class="toggle"> Abnormal </label>	
+
+										<label class="btn btn-xs grey" id="inactiveitems" >
+										<input type="checkbox" class="toggle"> Inactive </label>											
+									</div>
+									
+								</div>
+							 
+						</div>							
+					 
+					 
+					
+				</div>
+			</div>
+				  
+			<!-- </div> -->
+			<!-- END PAGE HEADER-->
+		
+		<div class="clearfix">
+		</div>
+				 
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+				 
+			 
+		<!-- BEGIN DASHBOARD STATS -->
+			<div class="row" id="gridview"> 
+			 
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 abnormalmachine">					 
+						<!-- BEGIN PORTLET -->
+								<div class="portlet box red" style="background-color:transparent">
+									<div class="portlet-title">
+										<div class="caption caption-md">
+											<i class="icon-bar-chart theme-font hide"></i>
+											<span class="caption-subject bold">Shot Blast</span>
+											
+											<span class="badge badge-warning"> 1 </span>
+											
+							 		
+									<div id="popover-content" class="hidden" style="margin-left:5%;">
+															<!-- BEGIN TAB PORTLET-->
+										<div class="portlet box blue-dark" >
+											<div class="portlet-title">
+												<div class="caption">
+													 Shot Blast
+												</div>
+												<ul class="nav nav-tabs">													 
+													<li class="active">
+														<a href="#portlet_tab2" data-toggle="tab"> Details</a>
+													</li>
+													<li>
+														<a href="#portlet_tab1" data-toggle="tab"> Notifications </a>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="portlet-body">
+												<div class="tab-content">
+												
+													<div class="tab-pane active" id="portlet_tab1">
+														 
+														<table class="table table-striped table-bordered table-hover" id="sample_1">
+															<tbody> 
+																<tr>  
+																	<td class="text-primary bold">Machinery Label &amp; Address</th>											
+																	<td>DCM-2927 Shot Blast Machine</td>											
+																 
+																	<td class="text-primary bold">Location / Area</td>
+																	<td class="center">Casting Block Yard-2</td>
+																</tr><tr>		
+																	<td class="text-primary bold">Power Type</td> 
+																	<td class="center">AC : 100-330 Kv</td> 
+																	
+																	<td class="text-primary bold">Sensors Installed</td> 
+																	<td class="center">Temperature - 01 , Vibration - 01 </td> 
+																</tr> 
+															</tbody>
+														</table>
+													 
+													
+													<div class="clearfix"></div>
+													
+													 <img alt="" src="assets/admin/layout/img/graph-temp.jpg" style="margin-top:2px;" /> 
+													 
+													<!--  <div role="tabpanel">
+														<ul class="nav nav-tabs" role="tablist" id="myTab">
+															<li class="active"><a href="#city" data-toggle="tab">city</a>
+
+															</li>
+															<li><a href="#station" data-toggle="tab">station</a>
+
+															</li>
+															<li><a href="#airport" data-toggle="tab">airport</a>
+
+															</li>
+														</ul>
+														<div class="tab-content22">
+															<div class="tab-pane active" id="city"> <span>city 1</span> 
+															</div>
+															<div class="tab-pane" id="station"> <span>station 1</span> 
+															</div>
+															<div class="tab-pane" id="airport"> <span>airport 1</span> 
+															</div>
+														</div>
+													</div> -->
+													 
+													<div class="clearfix"></div>	
+												</div>
+													
+													
+													<div class="tab-pane" id="portlet_tab2">
+														 
+														<!-- <p>
+															<a class="btn red" href="ui_tabs_accordions_navs.html#portlet_tab2" target="_blank">
+															Activate this tab via URL </a>
+														</p> -->
+													</div>
+													 
+												</div>
+											</div>					
+							
+										</div>
+										
+									</div>
+									 
+								 
+							</div>
+										
+										<div class="actions">
+											 
+												<div class="btn popover-btn" data-toggle="buttons">
+													<label class="btn btn-circle btn-xs red-thunderbird active" id="current2">
+													<input type="radio" class="toggle"> View Details </label>																									 
+												</div>
+												
+												<!-- <button type="button" id="current2" class="btn btn-sm btn-circle red-sunglo"> Current </button>
+												<button type="button" id="history2" class="btn btn-sm btn-circle red-sunglo"> History </button> -->
+											 
+										</div>
+									</div>
+									
+									<div class="portlet-body form">
+										<div class="number-stats" style="margin:0px;">
+										
+											<div id="tab1" class="vcontainer">
+
+												<ul class="tabs">
+													<li class="tab current" data-tab="tab-11">Temperature</li>
+													<li class="tab" data-tab="tab-12">Vibration</li> 
+												</ul>
+
+												<div id="tab-11" class="tab-content current">													
+													<table style="margin:0px; line-height:25px;">												
+														<tbody>
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-danger.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3 class="red"> Fore Sensor -1200 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph-red.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3 class="red"> 95&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front right sensor -1201 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph1.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 48&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front left sensor -1204 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph2.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 52&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Mid sensor -1208 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph3.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 42&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-yellow.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Rear left sensor -1212 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph4.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 76&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+														</tbody>
+													</table> 
+												</div>
+												
+												<div id="tab-12" class="tab-content">													 
+														<table style="margin:0px; line-height:25px;">												
+														<tbody>
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-danger.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3 class="red"> Vibration Sensor -130 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph-red.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3 class="red"> 89&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front motor sensor -132 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph1.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 42&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Mid sensor -134 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph2.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 56&deg;F </h3> 
+																</td>
+																 
+															</tr>
+														 
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-yellow.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Rear motor sensor -135 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph4.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 69&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+														</tbody>
+													</table> 
+												
+												</div>
+											
+											</div> 
+				 
+																		 
+										</div> 
+										 
+										<div id="history-block2" class="table-scrollable1 table-scrollable-borderless" style="margin:0px 0px;">
+											<table class="table table-hover">
+											<thead>
+											<tr class="uppercase">												
+												<th style="width:50%;"> 
+													<!-- <i class="fa fa-history"></i>  -->
+													<img src="assets/admin/layout/img/icon-history.png" alt="icon history" /> </th>
+												<th style="width:30%;" class="temperature">
+													<!-- <i class="fa fa-fire font-red"></i>  --> 
+													 <img src="assets/admin/layout/img/icon-temp.png" alt="icon temperature" />
+												</th>
+												<th class="vibration">
+													<!-- <i class="fa fa-database font-red"></i>  -->
+													 <img src="assets/admin/layout/img/icon-vibe.png" alt="icon Vibration" />
+												</th>												
+											</tr>
+											</thead>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:00</span>
+												</td>												
+												<td class="temperature">
+													 68 &deg;F
+												</td>
+												<td class="vibration">
+													2.6 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:15</span>
+												</td>												
+												<td class="temperature">
+													 73 &deg;F
+												</td>
+												<td class="vibration">
+													1.8 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:40</span>
+												</td>												
+												<td class="temperature">
+													 70 &deg;F
+												</td>
+												<td class="vibration">
+													2.0 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:50</span>
+												</td>												
+												<td class="temperature">
+													 66 &deg;F
+												</td>
+												<td class="vibration">
+													2.2 Hz
+												</td>
+											</tr>
+											</table>
+											
+											<div class="scroller-footer">
+												<div class="btn-arrow-link pull-right">
+													<a href="#">View more</a>
+													<i class="icon-arrow-right"></i>
+												</div>
+											</div>
+										</div>
+									
+								
+									</div>
+									
+								</div>
+							  
+				</div>
+				
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 activemachine">
+					 
+						<!-- BEGIN PORTLET -->
+								<div class="portlet box green" style="background-color:transparent">
+									<div class="portlet-title">
+										<div class="caption caption-md">
+											<i class="icon-bar-chart theme-font hide"></i>
+											<span class="caption-subject bold">CNC Machine</span> 
+											
+														
+							 		
+									<div id="popover-content22" class="hidden" style="margin-left:5%;">
+															<!-- BEGIN TAB PORTLET-->
+										<div class="portlet box blue-dark" >
+											<div class="portlet-title">
+												<div class="caption">
+													 CNC Machine
+												</div>
+												<ul class="nav nav-tabs">													 
+													<li class="active">
+														<a href="#portlet_tab2" data-toggle="tab"> Details</a>
+													</li>
+													<li>
+														<a href="#portlet_tab1" data-toggle="tab"> Notifications </a>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="portlet-body">
+												<div class="tab-content">
+												
+													<div class="tab-pane active" id="portlet_tab1">
+														 
+														<table class="table table-striped table-bordered table-hover" id="sample_1">
+															<tbody> 
+																<tr>  
+																	<td class="text-primary bold">Machinery Label &amp; Address</th>											
+																	<td>CPC-2005 Control Machine</td>											
+																 
+																	<td class="text-primary bold">Location / Area</td>
+																	<td class="center">Casting Block Yard-2</td>
+																</tr><tr>		
+																	<td class="text-primary bold">Power Type</td> 
+																	<td class="center">AC : 100-330 Kv</td> 
+																	
+																	<td class="text-primary bold">Sensors Installed</td> 
+																	<td class="center">Temperature - 01 , Vibration - 01 </td> 
+																</tr> 
+															</tbody>
+														</table>
+													 
+													
+													<div class="clearfix"></div>
+													
+													 <img alt="" src="assets/admin/layout/img/graph-vibe.jpg" style="margin-top:2px;" /> 
+													 
+													 
+													<div class="clearfix"></div>	
+												</div>
+													
+													
+													<div class="tab-pane" id="portlet_tab2">
+														 
+														<!-- <p>
+															<a class="btn red" href="ui_tabs_accordions_navs.html#portlet_tab2" target="_blank">
+															Activate this tab via URL </a>
+														</p> -->
+													</div>
+													 
+												</div>
+											</div>					
+							
+										</div>
+										
+									</div>
+								
+											
+										</div>
+										
+										<div class="actions">
+											<div class="btn popover-btn22" data-toggle="buttons">
+												<label class="btn btn-circle btn-xs green-jungle active" id="current2">
+												<input type="radio" class="toggle"> View Details </label>																									 
+											</div>
+										</div>
+									</div>
+									
+									<div class="portlet-body form">
+										<div class="number-stats" style="margin:0px;">
+											<div id="tab2" class="vcontainer">
+
+												<ul class="tabs">
+													<li class="tab current" data-tab="tab-21">Temperature</li>
+													<li class="tab" data-tab="tab-22">Vibration</li> 
+												</ul>
+
+												<div id="tab-21" class="tab-content current">													
+													<table style="margin:0px; line-height:25px;">												
+														<tbody>
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front motor Sensor -400 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph3.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 48&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front right sensor -401 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph1.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 54&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front left sensor -404 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph2.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 67&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Mid sensor -408 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph3.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 45&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															 
+														</tbody>
+													</table> 
+												</div>
+												
+												<div id="tab-22" class="tab-content">													 
+														<table style="margin:0px; line-height:25px;">												
+														<tbody>
+															 
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Fore Shaft sensor -132 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph1.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 42&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Sprayer sensor -134 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph2.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 56&deg;F </h3> 
+																</td>
+																 
+															</tr>
+														 
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-yellow.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Fan Wheel sensor -135 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph4.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 69&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+														</tbody>
+													</table> 
+												
+												</div>
+											
+											</div> 
+				 
+										</div> 
+										 
+										<div id="history-block1" class="table-scrollable1 table-scrollable-borderless" style="margin:0px 0px;">
+											<table class="table table-hover">
+											<thead>
+											<tr class="uppercase">												
+												<th style="width:50%;"> 
+													<!-- <i class="fa fa-history"></i>  -->
+													<img src="assets/admin/layout/img/icon-history.png" alt="icon history" /> </th>
+												<th style="width:30%;" class="temperature">
+													<!-- <i class="fa fa-fire font-red"></i>  --> 
+													 <img src="assets/admin/layout/img/icon-temp.png" alt="icon temperature" />
+												</th>
+												<th class="vibration">
+													<!-- <i class="fa fa-database font-red"></i>  -->
+													 <img src="assets/admin/layout/img/icon-vibe.png" alt="icon Vibration" />
+												</th>												
+											</tr>
+											</thead>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:00</span>
+												</td>												
+												<td class="temperature"> 
+													 68 &deg;F
+												</td>
+												<td class="vibration">
+													2.6 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:15</span>
+												</td>												
+												<td class="temperature">
+													 73 &deg;F
+												</td>
+												<td class="vibration">
+													1.8 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:40</span>
+												</td>												
+												<td class="temperature">
+													 70 &deg;F
+												</td>
+												<td class="vibration">
+													2.0 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:50</span>
+												</td>												
+												<td class="temperature">
+													 66 &deg;F
+												</td>
+												<td class="vibration">
+													2.2 Hz
+												</td>
+											</tr>
+											</table>
+											
+											<div class="scroller-footer">
+												<div class="btn-arrow-link pull-right">
+													<a href="#">View more</a>
+													<i class="icon-arrow-right"></i>
+												</div>
+											</div>
+										</div>
+									
+								
+									</div>
+									
+								
+								</div>
+							  
+				</div>
+					<!-- END PORTLET -->
+	  				
+	  		
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 activemachine">					 
+						<!-- BEGIN PORTLET -->
+								<div class="portlet box green" style="background-color:transparent">
+									<div class="portlet-title">
+										<div class="caption caption-md">
+											<i class="icon-bar-chart theme-font hide"></i>
+											<span class="caption-subject bold">Powder Coating</span> 
+										</div>
+										
+										<div class="actions">
+											<div class="btn popover-btn" data-toggle="buttons">
+												<label class="btn btn-circle btn-xs green-jungle active" id="current2">
+												<input type="radio" class="toggle"> View Details </label>																									 
+											</div>
+										</div>
+									</div>
+									
+									<div class="portlet-body form">
+										<div class="number-stats" style="margin:0px;">
+										  <div id="tab3" class="vcontainer">
+
+												<ul class="tabs">
+													<li class="tab current" data-tab="tab-31">Temperature</li>
+													<li class="tab" data-tab="tab-32">Vibration</li> 
+												</ul>
+
+												<div id="tab-31" class="tab-content current">													
+													<table style="margin:0px; line-height:25px;">												
+														<tbody>
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front bearing Sensor -606 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph3.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 48&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front valve sensor -608 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph1.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 52&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Shaft sensor -610 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph2.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 67&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Mid sensor -611 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph2.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 65&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															 
+														</tbody>
+													</table> 
+												</div>
+												
+												<div id="tab-32" class="tab-content">													 
+														<table style="margin:0px; line-height:25px;">												
+														<tbody>
+															 
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Front motor sensor -432 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph1.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 48&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Mid sensor -434 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph3.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 42&deg;F </h3> 
+																</td>
+																 
+															</tr>
+														 
+															<tr>
+																<td>
+																	<img src="assets/admin/layout/img/sicon-green.png" class="img-responsive1" style="max-width:150px;" alt="logo" /> 
+																</td>															
+																<td style="width:38%;"> 
+																	<h3> Rear motor sensor -435 </h3>
+																</td>
+																<td>
+																	<img src="assets/admin/layout/img/bgraph2.png" /> 
+																</td>																
+																<td style="padding-left:10px;"> 
+																	<h3> 55&deg;F </h3> 
+																</td>
+																 
+															</tr>
+															
+														</tbody>
+													</table> 
+												
+												</div>
+											
+											</div> 
+				 
+										</div> 
+										 
+										<div id="history-block3" class="table-scrollable1 table-scrollable-borderless" style="margin:0px 0px;">
+											<table class="table table-hover">
+											<thead>
+											<tr class="uppercase">												
+												<th style="width:50%;"> 
+													<!-- <i class="fa fa-history"></i>  -->
+													<img src="assets/admin/layout/img/icon-history.png" alt="icon history" /> </th>
+												<th style="width:30%;" class="temperature">
+													<!-- <i class="fa fa-fire font-red"></i>  --> 
+													 <img src="assets/admin/layout/img/icon-temp.png" alt="icon temperature" />
+												</th>
+												<th class="vibration">
+													<!-- <i class="fa fa-database font-red"></i>  -->
+													 <img src="assets/admin/layout/img/icon-vibe.png" alt="icon Vibration" />
+												</th>												
+											</tr>
+											</thead>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:00</span>
+												</td>												
+												<td class="temperature">
+													 68 &deg;F
+												</td>
+												<td class="vibration">
+													2.6 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:15</span>
+												</td>												
+												<td class="temperature">
+													 73 &deg;F
+												</td>
+												<td class="vibration">
+													1.8 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:40</span>
+												</td>												
+												<td class="temperature">
+													 70 &deg;F
+												</td>
+												<td class="vibration">
+													2.0 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:50</span>
+												</td>												
+												<td class="temperature">
+													 66 &deg;F
+												</td>
+												<td class="vibration">
+													2.2 Hz
+												</td>
+											</tr>
+											</table>
+											
+											<div class="scroller-footer">
+												<div class="btn-arrow-link pull-right">
+													<a href="#">View more</a>
+													<i class="icon-arrow-right"></i>
+												</div>
+											</div>
+										</div>
+									
+								
+									</div>
+									
+								</div>
+							  
+				</div>
+				
+			 
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 inactivemachine">					 
+						<!-- BEGIN PORTLET -->
+								<div class="portlet box grey" >
+									<div class="portlet-title">
+										<div class="caption caption-md">
+											<i class="icon-bar-chart theme-font hide"></i>
+											<span class="caption-subject bold text-default">Polishing Machine</span>
+											<span class="caption-helper hide">weekly stats...</span>
+										</div>
+										
+										<div class="actions">
+											 	
+												<div class="btn-group btn-group-circle" data-toggle="buttons">
+													<label class="btn btn-xs grey active" id="current8" disabled>
+													<input type="radio" class="toggle"> View Details </label>
+												</div>
+										</div>
+									</div>
+									
+									<div class="portlet-body form">  
+										<div class="number-stats" style="margin:0px; ">
+											<img src="assets/admin/layout/img/inactive-block.png" alt="icon history" style="margin-top:10px;" /> 
+										</div> 
+										 
+										<div id="history-block8" class="table-scrollable1 table-scrollable-borderless" style="margin:0px 0px;">
+											<table class="table table-hover">
+											<thead>
+											<tr class="uppercase">												
+												<th style="width:50%;"> 
+													<!-- <i class="fa fa-history"></i>  -->
+													<img src="assets/admin/layout/img/icon-history.png" alt="icon history" /> </th>
+												<th style="width:30%;" class="temperature">
+													<!-- <i class="fa fa-fire font-red"></i>  --> 
+													 <img src="assets/admin/layout/img/icon-temp.png" alt="icon temperature" />
+												</th>
+												<th class="vibration">
+													<!-- <i class="fa fa-database font-red"></i>  -->
+													 <img src="assets/admin/layout/img/icon-vibe.png" alt="icon Vibration" />
+												</th>												
+											</tr>
+											</thead>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:00</span>
+												</td>												
+												<td class="temperature">
+													 68 &deg;F
+												</td>
+												<td class="vibration">
+													2.6 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:15</span>
+												</td>												
+												<td class="temperature">
+													 73 &deg;F
+												</td>
+												<td class="vibration">
+													1.8 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:40</span>
+												</td>												
+												<td class="temperature">
+													 70 &deg;F
+												</td>
+												<td class="vibration">
+													2.0 Hz
+												</td>
+											</tr>
+											<tr>												
+												<td>
+													 <span class="bold theme-font">08:50</span>
+												</td>												
+												<td class="temperature">
+													 66 &deg;F
+												</td>
+												<td class="vibration">
+													2.2 Hz
+												</td>
+											</tr>
+											</table>
+											
+											<div class="scroller-footer">
+												<div class="btn-arrow-link pull-right">
+													<a href="#">View more</a>
+													<i class="icon-arrow-right"></i>
+												</div>
+											</div>
+										</div>
+									
+								
+									</div>
+									
+								</div>
+							  
+				</div>
+				
+				 		
+			</div>
+			<!-- END DASHBOARD STATS -->
+		
+
+		<div class="clearfix">
+			</div>
+			 
+					
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	 
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+	<div class="page-footer-inner">
+		 2015 &copy; MIS
+	</div>
+	<div class="scroll-to-top">
+		<i class="icon-arrow-up"></i>
+	</div>
+</div>
+<!-- END FOOTER --> 
+
+	<!-- BEGIN CORE PLUGINS -->
+	<!--[if lt IE 9]>
+	<script src="assets/global/plugins/respond.min.js"></script>
+	<script src="assets/global/plugins/excanvas.min.js"></script> 
+	<![endif]-->
+
+	<script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+	<script src="assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<script src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/jquery.sparkline.js" type="text/javascript"></script>
+
+	<script src="assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script> 
+	<script src="assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script> 
+	<script src="assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>  
+	  
+	<script src="assets/global/plugins/jquery-bootpag/jquery.bootpag.min.js" type="text/javascript"></script>
+	<script src="assets/global/plugins/holder.js" type="text/javascript"></script> 
+	<!-- END PAGE LEVEL PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+	<script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+	<script src="assets/admin/pages/scripts/index.js" type="text/javascript"></script>
+	<script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+	<script src="assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+	<script src="assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+	<script src="assets/admin/pages/scripts/profile.js" type="text/javascript"></script>
+	<script src="assets/admin/pages/scripts/ui-general.js" type="text/javascript"></script>
+	<script src="assets/admin/pages/scripts/charts-amcharts.js"></script> 
+	<!-- END PAGE LEVEL SCRIPTS -->
+	
+<style type="text/css">
+		.thresholds-box {
+			padding: 0px;
+			display: none;
+			margin-top: 10px; 
+		} 
+
+
+		.redmarker{
+			/* background: url("assets/admin/layout/img/marker-red.png") top left no-repeat; */
+			position:absolute;
+			  left: 53%;
+				top: 37%;
+			width: 45px;
+			height:45px;
+			z-index: 100;
+		}
+		.redmarker img { width:40px; height:40px; z-index: 100;  }
+		
+		.redmarker1{
+			position:absolute;
+			left: 51%;
+            top: 30%;
+			width: 30px;
+			height:30px;
+			z-index: 100;
+		}
+		.greenmarker1{
+			position:absolute;
+			left: 25%;
+			top: 31%;
+			width: 30px;
+			height:30px;
+			z-index: 100;
+		}
+		.orangemarker1{
+			position:absolute;
+			left: 15%;
+			top: 60%;
+			width: 30px;
+			height:30px;
+			z-index: 100;
+		}
+		 
+</style>
+		
+
+<script>
+	jQuery(document).ready(function() {
+			
+			 
+			$('#showtemp').click(function(){
+				$('.vibration').toggle();
+				
+				if($('.vibration').css('display') == 'none'){ 
+				$('#vibration').attr("disabled",true);
+				}
+				else{
+				$('#vibration').attr("disabled",false);
+				}
+					   
+			});
+			
+			
+			
+			$('#vibration').click(function(){
+				$('.temperature').toggle();
+				
+				if($('.temperature').css('display') == 'none'){ 
+				$('#showtemp').attr("disabled",true);
+				}
+				else{
+				$('#showtemp').attr("disabled",false);
+				}					   
+			});
+			 
+			
+			$('#gridview').show();
+			$('#mapview').hide();
+			
+				
+			$('#map').click(function(){
+				$('#gridview').hide();
+				$('#mapview').show();
+				$('#floorview').hide();
+			});
+			
+			$('#grid').click(function(){
+				$('#gridview').show();
+			    $('#mapview').hide();
+				$('#floorview').hide();
+			});
+					
+			
+			 $('#floorview').hide();	
+			 $('.realmap').click(function(){
+			 $('#mapview').hide();
+			 $('#floorview').show();
+			 });
+				 
+			var options1 = {
+				content: function () {
+					return $("#popover-content1").html();
+				},
+				placement: "bottom",
+				container: "body",
+				toggle: "popover",
+				title: "", 
+				 html: true,
+				trigger: 'click',
+				title: "Title", 
+				content: $('#popoverContent').remove().html()
+			};
+			 
+			var options2 = {
+				content: function () {
+					return $("#popover-content2").html();
+				},
+				placement: "bottom",
+				container: "body",
+				toggle: "popover",
+				title: "",
+				html: true
+			};
+			
+			
+			var options3 = {
+				content: function () {
+					return $("#popover-content3").html();
+				},
+				placement: "bottom",
+				container: "body",
+				toggle: "popover",
+				title: "",
+				html: true
+			};
+			
+			var options4 = {
+				content: function () {
+					return $("#map-redpopover-content").html();
+				},
+				placement: "bottom",
+				container: "body",
+				toggle: "popover",
+				title: "",
+				html: true
+			};
+			
+			var options5 = {
+				content: function () {
+					return $("#map-greenpopover-content").html();
+				},
+				placement: "bottom",
+				container: "body",
+				toggle: "popover",
+				title: "",
+				html: true
+			};
+ 
+			var options6 = {
+				content: function () {
+					return $("#map-orangepopover-content").html();
+				},
+				placement: "bottom",
+				container: "body",
+				toggle: "popover",
+				title: "",
+				html: true
+			};
+			
+
+			$('.popover-btn1').popover(options1); 
+			$('.popover-btn2').popover(options2);
+			$('.popover-btn3').popover(options3);
+			$('.popover-btn4').popover(options4);
+			$('.popover-btn5').popover(options5);
+			$('.popover-btn6').popover(options6);
+			
+			
+			var options = {
+				content: function () {
+					return $("#popover-content").html();
+				},
+				placement: "bottom",
+				container: "body",
+				toggle: "popover",
+				title: "",
+				html: true
+			};
+			
+			var options2 = {
+				content: function () {
+					return $("#popover-content22").html();
+				},
+				placement: "bottom",
+				container: "body",
+				toggle: "popover",
+				title: "",
+				html: true
+			};
+
+			$('.popover-btn').popover(options); 
+			$('.popover-btn22').popover(options2); 
+			$('.popover-btn').click(function(){
+				ChartsAmcharts.init(); // init demo charts
+				chart.handleResize();
+			});
+			
+			
+			
+				// control for history1 blocks
+					$("#current1").click(function(){
+						$('#history-block1').hide();
+					});			
+					$("#history1").click(function(){
+						$('#history-block1').show();
+					});
+				
+				// control for history2 blocks
+					$("#current2").click(function(){
+						$('#history-block2').hide();
+					});			
+					$("#history2").click(function(){
+						$('#history-block2').show();
+					});
+					
+				// control for history3 blocks
+					$("#current3").click(function(){
+						$('#history-block3').hide();
+					});
+					$("#history3").click(function(){
+						$('#history-block3').show();
+					});
+				
+				// control for history4 blocks
+					$("#current4").click(function(){
+						$('#history-block4').hide();
+					});
+					$("#history4").click(function(){
+						$('#history-block4').show();
+					});
+				
+				// control for history5 blocks
+					$("#current5").click(function(){
+						$('#history-block5').hide();
+					});
+					$("#history5").click(function(){
+						$('#history-block5').show();
+					});
+				
+				// control for history6 blocks
+					$("#current6").click(function(){
+						$('#history-block6').hide();
+					});
+					$("#history6").click(function(){
+						$('#history-block6').show();
+					});
+				
+				// control for history7 blocks
+					$("#current7").click(function(){
+						$('#history-block7').hide();
+					});
+					$("#history7").click(function(){
+						$('#history-block7').show();
+					});
+				
+				// control for history8 blocks
+					$("#current8").click(function(){
+						$('#history-block8').hide();
+					});
+					$("#history8").click(function(){
+						$('#history-block8').show();
+					});
+
+			
+			// to hide all history blocks
+			$('#history-block1').hide();
+			$('#history-block2').hide();
+			$('#history-block3').hide();
+			$('#history-block4').hide();
+			$('#history-block5').hide();
+			$('#history-block6').hide();
+			$('#history-block7').hide();
+			$('#history-block8').hide();
+			
+			
+			$('#healthyitems').click(function(){
+				$('.activemachine').toggle(200);
+				 
+				 if($('.activemachine').css('display') == 'none'){ 
+					$('#abnormalitems').attr("disabled",true);
+					$('#inactiveitems').attr("disabled",true);
+				}
+				else if($('.activemachine').css('display') == 'block'){
+					$('#abnormalitems').attr("disabled",false);
+					$('#inactiveitems').attr("disabled",false);
+				}
+			
+				
+			});
+			
+			
+			$('#abnormalitems').click(function(){
+				$('.abnormalmachine').toggle(200);
+				
+				if($('.abnormalmachine').css('display') == 'none'){ 
+					$('#healthyitems').attr("disabled",true);
+					$('#inactiveitems').attr("disabled",true);
+				}
+				else{
+					$('#healthyitems').attr("disabled",false);
+					$('#inactiveitems').attr("disabled",false);
+				}
+					   
+			});
+			
+			$('#inactiveitems').click(function(){
+				$('.inactivemachine').toggle(200);
+				
+				if($('.inactivemachine').css('display') == 'none'){ 
+					$('#healthyitems').attr("disabled",true);
+					$('#abnormalitems').attr("disabled",true);
+				}
+				else{
+					$('#healthyitems').attr("disabled",false);
+					$('#abnormalitems').attr("disabled",false);
+				}
+					   
+			});
+			 
+			// JavaScript Document
+ 	
+				$('#tab1 ul.tabs li').click(function(){
+					var tab_id = $(this).attr('data-tab');
+
+					$('#tab1 ul.tabs li').removeClass('current');
+					$('#tab1 .tab-content').removeClass('current');
+
+					$(this).addClass('current');
+					$("#"+tab_id).addClass('current');
+				})
+				
+				$('#tab2 ul.tabs li').click(function(){
+					var tab_id = $(this).attr('data-tab');
+
+					$('#tab2 ul.tabs li').removeClass('current');
+					$('#tab2 .tab-content').removeClass('current');
+
+					$(this).addClass('current');
+					$("#"+tab_id).addClass('current');
+				})
+				
+				$('#tab3 ul.tabs li').click(function(){
+					var tab_id = $(this).attr('data-tab');
+
+					$('#tab3 ul.tabs li').removeClass('current');
+					$('#tab3 .tab-content').removeClass('current');
+
+					$(this).addClass('current');
+					$("#"+tab_id).addClass('current');
+				})
+				
+			 
+				var tabContentGraph = $('#popover-content22').html();
+				$('.serviceCabin').popover({
+					'html': true,
+					'content': function () {
+						$('#popover-content22').remove();
+						return tabContentGraph;
+					}
+				});
+ 	
+ 
+			   // initiate layout and plugins
+			   Metronic.init(); // init metronic core components
+				Layout.init(); // init current layout
+				QuickSidebar.init(); // init quick sidebar
+				Demo.init(); // init demo features
+				Profile.init(); // init page demo
+				UIGeneral.init();
+				ChartsAmcharts.init(); // init demo charts
+				 
+	 
+			});
+	</script>
+	<!-- END JAVASCRIPTS -->
+ 
+
+</body>
+<!-- END BODY -->
+</html>
